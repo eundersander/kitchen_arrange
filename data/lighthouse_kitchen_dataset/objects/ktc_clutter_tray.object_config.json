@@ -1,0 +1,10 @@
+{
+    "render_asset": "ktc_clutter_tray.glb",
+    "collision_asset": "ktc_clutter_tray_COLLISION.glb",
+    "join_collision_meshes": false,
+    "mass": 2.0,
+    "COM": [0, 0, 0],
+    "scale": [0.8, 0.8, 0.8],
+    "friction_coefficient": 0.5,
+    "restitution_coefficient": 0.0
+}

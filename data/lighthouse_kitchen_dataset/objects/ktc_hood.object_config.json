@@ -1,0 +1,9 @@
+{
+    "render_asset": "ktc_hood.glb",
+    "collision_asset": "ktc_hood_COLLISION.glb",
+    "join_collision_meshes": false,
+    "mass": 50.0,
+    "COM": [0, 0, 0],
+    "friction_coefficient": 0.5,
+    "restitution_coefficient": 0.0
+}

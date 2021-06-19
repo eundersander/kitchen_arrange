@@ -1,0 +1,42 @@
+{
+    "stages": {
+        "default_attributes": {
+        },
+        "paths": {
+          ".json" : ["stages"],
+          ".glb" : ["stages/stage_test_glbs/*.glb"]
+        }
+    },
+    "objects":{
+        "default_attributes": {
+        },
+        "paths": {
+      ".json" : ["objects", "replicacad_objects"]
+    }
+    },
+    "articulated_objects":{
+      "paths": {
+        ".urdf" : ["urdf/dishwasher_urdf/*"]
+      }
+    },
+    "light_setups":{
+        "default_attributes": {
+        },
+        "paths": {
+      ".json" : ["lights"]
+    }
+    },
+  "scene_instances":{
+    "paths": {
+      ".json" : ["scenes"]
+    }
+  },
+    "navmesh_instances":{
+        "navmesh_path1":"test_navmesh_path1",
+        "navmesh_path2":"test_navmesh_path2"
+    },
+    "semantic_scene_descriptor_instances": {
+        "semantic_descriptor_path1":"test_semantic_descriptor_path1",
+        "semantic_descriptor_path2":"test_semantic_descriptor_path2"
+    }
+}

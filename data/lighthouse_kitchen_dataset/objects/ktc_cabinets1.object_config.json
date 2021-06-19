@@ -1,0 +1,10 @@
+{
+  "render_asset": "ktc_cabinets1.glb",
+  "collision_asset": "ktc_cabinets1_COLLISION_raised.glb",
+  "join_collision_meshes": false,
+  "mass": 50.0,
+  "COM": [0, 0, 0],
+  "friction_coefficient": 0.5,
+  "restitution_coefficient": 0.0,
+  "requires_lighting": true
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<robot name="dishwasher">
+  <link name="root">
+  </link>
+
+  <joint name="body_transform" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="root"/>
+    <child link="body"/>
+  </joint>
+
+  <link name="body">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="25.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+<!-- glb file goes here -->
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_dishwasher.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_dishwasher_collider.glb"/>
+      </geometry>
+    </collision>
+  </link>
+
+<!-- child articulated objects go here, add more <joint> <link> referenced pairs below -->
+<!-- limits for rotational joints are in radians, prysmatic in meters -->
+
+  <joint name="bottom_rack" type="prismatic">
+    <origin rpy="0 0 0" xyz="-0.0 0.225 -0.375"/>
+    <parent link="body"/>
+    <child link="bottom_rack"/>
+    <axis xyz="0 0 -1"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="0" upper="0.274" velocity="1.0"/>
+  </joint>
+
+  <link name="bottom_rack">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_dishwasher_rack.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_dishwasher_rack_collider.glb"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="top_rack" type="prismatic">
+    <origin rpy="0 0 0" xyz="-0.0 0.485 -0.375"/>
+    <parent link="body"/>
+    <child link="top_rack"/>
+    <axis xyz="0 0 -1"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="0" upper="0.274" velocity="1.0"/>
+  </joint>
+
+  <link name="top_rack">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_dishwasher_rack.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_dishwasher_rack_collider.glb"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="door" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0.05 -0.622"/>
+    <parent link="body"/>
+    <child link="door"/>
+    <axis xyz="1 0 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="-1.50" upper="0" velocity="1.0"/>
+  </joint>
+
+<link name="door">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_dishwasher_door.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_dishwasher_door_collider.glb"/>
+      </geometry>
+    </collision>
+</link>
+
+
+
+</robot>

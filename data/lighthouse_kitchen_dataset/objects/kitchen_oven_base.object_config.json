@@ -1,0 +1,9 @@
+{
+    "render_asset": "kitchen_oven_base.glb",
+    "collision_asset": "kitchen_oven_base_COLLISION.glb",
+    "join_collision_meshes": false,
+    "mass": 20.0,
+    "COM": [0, 0, 0],
+    "friction_coefficient": 0.5,
+    "restitution_coefficient": 0.0
+}

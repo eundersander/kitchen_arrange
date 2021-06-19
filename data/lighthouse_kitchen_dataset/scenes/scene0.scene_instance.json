@@ -1,0 +1,38 @@
+{
+	"translation_origin":"com",
+	"stage_instance":{
+		"template_name":"apartment_0_f0_stage"
+	},
+	"object_instances":[
+
+    {
+      "template_name":"ktc_cabinets1",
+      "motion_type": "KINEMATIC"
+    },
+    {
+      "template_name":"ktc_cabinets2_open",
+      "motion_type": "KINEMATIC"
+    },
+    {
+      "template_name":"ktc_cabinets3",
+      "motion_type": "KINEMATIC"
+    },
+    {
+      "template_name":"ktc_hood",
+      "motion_type": "KINEMATIC"
+    },
+
+    {"template_name":"ktc_clutter_tray"},
+    {"template_name":"ktc_clutter_tray"},
+    {"template_name":"milk_carton"},
+    {"template_name":"cookie_cooked"},
+    {"template_name":"frl_apartment_cup_02"},
+    {"template_name":"frl_apartment_cup_02"},
+    {"template_name":"frl_apartment_cup_02"},
+    {"template_name":"frl_apartment_cup_02"}
+
+  ],
+
+	"navmesh_instance":"navmesh_path1",
+	"semantic_scene_instance":"semantic_descriptor_path1"
+}

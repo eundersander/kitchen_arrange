@@ -1,0 +1,10 @@
+{
+    "render_asset": "milk_carton.glb",
+    "collision_asset": "milk_carton_collision.glb",
+    "join_collision_meshes": true,
+    "mass": 0.5,
+    "COM": [0, 0, 0],
+    "scale": [0.5, 0.5, 0.5],
+    "friction_coefficient": 0.5,
+    "restitution_coefficient": 0.0
+}
