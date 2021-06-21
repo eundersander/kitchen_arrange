@@ -1,7 +1,7 @@
 {
 	"translation_origin":"com",
 	"stage_instance":{
-		"template_name":"apartment_0_f0_stage"
+		"template_name":"apartment_0_f0_stage_only_kitchen_aligned"
 	},
 	"object_instances":[
 
@@ -31,6 +31,17 @@
     {"template_name":"frl_apartment_cup_02"},
     {"template_name":"frl_apartment_cup_02"}
 
+  ],
+
+  "articulated_object_instances": [
+    {
+      "template_name": "ktc_dishwasher",
+      "fixed_base": true
+    },
+    {
+      "template_name": "kitchen_oven",
+      "fixed_base": true
+    }
   ],
 
 	"navmesh_instance":"navmesh_path1",

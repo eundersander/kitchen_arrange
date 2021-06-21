@@ -4,7 +4,7 @@
         },
         "paths": {
           ".json" : ["stages"],
-          ".glb" : ["stages/stage_test_glbs/*.glb"]
+          ".glb" : ["stages/*.glb"]
         }
     },
     "objects":{
@@ -16,7 +16,7 @@
     },
     "articulated_objects":{
       "paths": {
-        ".urdf" : ["urdf/dishwasher_urdf/*"]
+        ".urdf" : ["urdf/dishwasher_urdf/ktc_dishwasher.urdf", "urdf/kitchen_oven/kitchen_oven.urdf"]
       }
     },
     "light_setups":{
