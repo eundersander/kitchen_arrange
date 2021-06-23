@@ -11,7 +11,7 @@
         "default_attributes": {
         },
         "paths": {
-      ".json" : ["objects", "replicacad_objects"]
+      ".json" : ["objects", "../replicacad/kitchen_objects/configs_convex"]
     }
     },
     "articulated_objects":{
