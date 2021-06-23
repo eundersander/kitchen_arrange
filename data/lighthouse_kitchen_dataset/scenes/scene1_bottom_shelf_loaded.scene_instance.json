@@ -1,0 +1,77 @@
+{
+  "translation_origin": "com",
+  "stage_instance": {
+    "template_name": "apartment_0_f0_stage_only_kitchen_aligned"
+  },
+  "object_instances": [
+    {
+      "template_name": "ktc_cabinets3",
+      "motion_type": "KINEMATIC"
+    },
+    {
+      "template_name": "ktc_clutter_tray"
+    },
+    {
+      "template_name": "ktc_clutter_tray"
+    },
+    {
+      "template_name": "frl_apartment_pan_01_small"
+    },
+    {
+      "template_name": "frl_apartment_plate_01"
+    },
+    {
+      "template_name": "frl_apartment_plate_01"
+    },
+    {
+      "template_name": "frl_apartment_plate_01"
+    },
+    {
+      "template_name": "frl_apartment_plate_01"
+    },
+    {
+      "template_name": "frl_apartment_plate_01_small"
+    },
+    {
+      "template_name": "frl_apartment_plate_01_small"
+    },
+    {
+      "template_name": "frl_apartment_plate_01_small"
+    },
+    {
+      "template_name": "frl_apartment_plate_01_small"
+    },
+    {
+      "template_name": "frl_apartment_bowl_06"
+    },
+    {
+      "template_name": "frl_apartment_bowl_06"
+    },
+    {
+      "template_name": "frl_apartment_bowl_06"
+    },
+    {
+      "template_name": "frl_apartment_bowl_06"
+    },
+    {
+      "template_name": "frl_apartment_kitchen_utensil_06"
+    },
+    {
+      "template_name": "frl_apartment_kitchen_utensil_06"
+    },
+    {
+      "template_name": "frl_apartment_kitchen_utensil_06"
+    },
+    {
+      "template_name": "frl_apartment_kitchen_utensil_06"
+    }
+  ],
+  "articulated_object_instances": [
+    {
+      "template_name": "ktc_dishwasher",
+      "fixed_base": true
+    }
+  ],
+  "navmesh_instance": "navmesh_path1",
+  "semantic_scene_instance": "semantic_descriptor_path1"
+}
