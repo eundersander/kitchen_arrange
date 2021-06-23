@@ -2,7 +2,7 @@
     "keyframe": {
         "rigidObjects": [
             {
-                "name": "ktc_cabinets1_/0000",
+                "name": "ktc_cabinets1_:0000",
                 "pos": [
                     -1.0199997,
                     0.0,
@@ -16,7 +16,7 @@
                 ]
             },
             {
-                "name": "ktc_cabinets2_open_/0000",
+                "name": "ktc_cabinets2_open_:0000",
                 "pos": [
                     -3.2,
                     0.0,
@@ -30,7 +30,7 @@
                 ]
             },
             {
-                "name": "ktc_cabinets3_/0000",
+                "name": "ktc_cabinets3_:0000",
                 "pos": [
                     -1.5399998,
                     0.0,
@@ -44,7 +44,7 @@
                 ]
             },
             {
-                "name": "ktc_hood_/0000",
+                "name": "ktc_hood_:0000",
                 "pos": [
                     -3.2,
                     1.7,
@@ -58,7 +58,7 @@
                 ]
             },
             {
-                "name": "ktc_clutter_tray_/0000",
+                "name": "ktc_clutter_tray_:0000",
                 "pos": [
                     -0.2788845,
                     0.9299172,
@@ -72,7 +72,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_vase_02_/0000",
+                "name": "frl_apartment_vase_02_:0000",
                 "pos": [
                     -1.7981839,
                     0.2053383,
@@ -86,7 +86,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_02_/0000",
+                "name": "frl_apartment_plate_02_:0000",
                 "pos": [
                     -2.0828499,
                     0.1232114,
@@ -100,7 +100,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_pan_01_/0000",
+                "name": "frl_apartment_pan_01_:0000",
                 "pos": [
                     -0.9254511,
                     0.9746527,
@@ -114,7 +114,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_pan_01_small_/0000",
+                "name": "frl_apartment_pan_01_small_:0000",
                 "pos": [
                     -1.1013789,
                     0.9522855,
@@ -128,7 +128,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_05_/0000",
+                "name": "frl_apartment_kitchen_utensil_05_:0000",
                 "pos": [
                     -2.3941411,
                     1.0032374,
@@ -142,7 +142,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_05_small_/0000",
+                "name": "frl_apartment_kitchen_utensil_05_small_:0000",
                 "pos": [
                     -2.440526,
                     1.0001711,
@@ -156,7 +156,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_/0000",
+                "name": "frl_apartment_plate_01_:0000",
                 "pos": [
                     -0.9366227,
                     0.9453104,
@@ -170,7 +170,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_small_/0000",
+                "name": "frl_apartment_plate_01_small_:0000",
                 "pos": [
                     -0.938463,
                     0.9635118,
@@ -184,7 +184,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_06_/0000",
+                "name": "frl_apartment_kitchen_utensil_06_:0000",
                 "pos": [
                     -0.6626725,
                     0.9857334,
@@ -198,7 +198,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_06_/0000",
+                "name": "frl_apartment_bowl_06_:0000",
                 "pos": [
                     -0.9801084,
                     0.9988164,
@@ -212,7 +212,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_02_/0000",
+                "name": "frl_apartment_kitchen_utensil_02_:0000",
                 "pos": [
                     -1.564531,
                     1.0036662,
@@ -226,7 +226,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_03_/0000",
+                "name": "frl_apartment_kitchen_utensil_03_:0000",
                 "pos": [
                     -1.43891,
                     0.981926,
@@ -240,7 +240,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_01_/0000",
+                "name": "frl_apartment_bowl_01_:0000",
                 "pos": [
                     -0.2262043,
                     1.0055775,
@@ -254,7 +254,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_02_/0000",
+                "name": "frl_apartment_bowl_02_:0000",
                 "pos": [
                     -0.7050263,
                     0.9922394,
@@ -268,7 +268,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_03_/0000",
+                "name": "frl_apartment_bowl_03_:0000",
                 "pos": [
                     -0.4577401,
                     0.9851492,
@@ -282,7 +282,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_07_/0000",
+                "name": "frl_apartment_bowl_07_:0000",
                 "pos": [
                     -2.4115078,
                     0.9934882,
@@ -296,7 +296,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_07_small_/0000",
+                "name": "frl_apartment_bowl_07_small_:0000",
                 "pos": [
                     -2.4196729,
                     1.0205752,
@@ -310,7 +310,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_cup_01_/0000",
+                "name": "frl_apartment_cup_01_:0000",
                 "pos": [
                     -2.1493399,
                     0.9668521,
@@ -324,7 +324,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_cup_02_/0000",
+                "name": "frl_apartment_cup_02_:0000",
                 "pos": [
                     -0.2536218,
                     0.9783813,
@@ -338,7 +338,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_cup_03_/0000",
+                "name": "frl_apartment_cup_03_:0000",
                 "pos": [
                     -0.2108029,
                     1.0188962,
@@ -352,7 +352,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_cup_05_/0000",
+                "name": "frl_apartment_cup_05_:0000",
                 "pos": [
                     -0.5366788,
                     0.9585354,
@@ -366,7 +366,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_01_/0000",
+                "name": "frl_apartment_kitchen_utensil_01_:0000",
                 "pos": [
                     -2.8139927,
                     0.9856498,
@@ -380,7 +380,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_04_/0000",
+                "name": "frl_apartment_kitchen_utensil_04_:0000",
                 "pos": [
                     -2.0848212,
                     0.1250195,
@@ -394,7 +394,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_08_/0000",
+                "name": "frl_apartment_kitchen_utensil_08_:0000",
                 "pos": [
                     -2.1483173,
                     1.0000959,
@@ -408,7 +408,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_09_/0000",
+                "name": "frl_apartment_kitchen_utensil_09_:0000",
                 "pos": [
                     -1.3134826,
                     1.0248041,
@@ -422,7 +422,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_vase_01_/0000",
+                "name": "frl_apartment_vase_01_:0000",
                 "pos": [
                     -1.8092807,
                     0.1878094,
@@ -436,7 +436,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_choppingboard_02_/0000",
+                "name": "frl_apartment_choppingboard_02_:0000",
                 "pos": [
                     0.5009587,
                     0.0954487,
@@ -452,7 +452,7 @@
         ],
         "articulatedObjects": [
             {
-                "name": "ktc_dishwasher_/0000",
+                "name": "ktc_dishwasher_:0000",
                 "pos": [
                     -1.0549999,
                     0.07,
@@ -471,7 +471,7 @@
                 ]
             },
             {
-                "name": "kitchen_oven_/0000",
+                "name": "kitchen_oven_:0000",
                 "pos": [
                     -3.0999999,
                     0.0199999,

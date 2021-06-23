@@ -2,7 +2,7 @@
     "keyframe": {
         "rigidObjects": [
             {
-                "name": "ktc_cabinets3_/0000",
+                "name": "ktc_cabinets3_:0000",
                 "pos": [
                     -1.5399998,
                     0.0,
@@ -16,7 +16,7 @@
                 ]
             },
             {
-                "name": "ktc_clutter_tray_/0000",
+                "name": "ktc_clutter_tray_:0000",
                 "pos": [
                     -1.0973397,
                     0.3311073,
@@ -30,7 +30,7 @@
                 ]
             },
             {
-                "name": "ktc_clutter_tray_/0001",
+                "name": "ktc_clutter_tray_:0001",
                 "pos": [
                     -1.0956441,
                     0.3311161,
@@ -44,7 +44,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_pan_01_small_/0000",
+                "name": "frl_apartment_pan_01_small_:0000",
                 "pos": [
                     -1.0102542,
                     0.9522866,
@@ -58,7 +58,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_/0000",
+                "name": "frl_apartment_plate_01_:0000",
                 "pos": [
                     -1.1443051,
                     0.3604236,
@@ -72,7 +72,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_/0001",
+                "name": "frl_apartment_plate_01_:0001",
                 "pos": [
                     -1.1454181,
                     0.3598347,
@@ -86,7 +86,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_/0002",
+                "name": "frl_apartment_plate_01_:0002",
                 "pos": [
                     -1.1432877,
                     0.361263,
@@ -100,7 +100,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_/0003",
+                "name": "frl_apartment_plate_01_:0003",
                 "pos": [
                     -1.1463813,
                     0.3591203,
@@ -114,7 +114,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_small_/0000",
+                "name": "frl_apartment_plate_01_small_:0000",
                 "pos": [
                     -0.9411526,
                     0.3002968,
@@ -128,7 +128,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_small_/0001",
+                "name": "frl_apartment_plate_01_small_:0001",
                 "pos": [
                     -0.9410896,
                     0.3024379,
@@ -142,7 +142,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_small_/0002",
+                "name": "frl_apartment_plate_01_small_:0002",
                 "pos": [
                     -0.9413278,
                     0.3009666,
@@ -156,7 +156,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_plate_01_small_/0003",
+                "name": "frl_apartment_plate_01_small_:0003",
                 "pos": [
                     -0.9417676,
                     0.3007453,
@@ -170,7 +170,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_06_/0000",
+                "name": "frl_apartment_bowl_06_:0000",
                 "pos": [
                     -1.121434,
                     0.3311009,
@@ -184,7 +184,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_06_/0001",
+                "name": "frl_apartment_bowl_06_:0001",
                 "pos": [
                     -0.8948706,
                     0.3211783,
@@ -198,7 +198,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_06_/0002",
+                "name": "frl_apartment_bowl_06_:0002",
                 "pos": [
                     -0.9873715,
                     0.3282012,
@@ -212,7 +212,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_bowl_06_/0003",
+                "name": "frl_apartment_bowl_06_:0003",
                 "pos": [
                     -1.2149947,
                     0.3226153,
@@ -226,7 +226,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_06_/0000",
+                "name": "frl_apartment_kitchen_utensil_06_:0000",
                 "pos": [
                     -1.1531735,
                     0.9857261,
@@ -240,7 +240,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_06_/0001",
+                "name": "frl_apartment_kitchen_utensil_06_:0001",
                 "pos": [
                     -1.2717386,
                     0.9857148,
@@ -254,7 +254,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_06_/0002",
+                "name": "frl_apartment_kitchen_utensil_06_:0002",
                 "pos": [
                     -1.2828958,
                     0.9857264,
@@ -268,7 +268,7 @@
                 ]
             },
             {
-                "name": "frl_apartment_kitchen_utensil_06_/0003",
+                "name": "frl_apartment_kitchen_utensil_06_:0003",
                 "pos": [
                     -1.1464363,
                     0.9857224,
@@ -284,7 +284,7 @@
         ],
         "articulatedObjects": [
             {
-                "name": "ktc_dishwasher_/0000",
+                "name": "ktc_dishwasher_:0000",
                 "pos": [
                     -1.0549999,
                     0.07,
