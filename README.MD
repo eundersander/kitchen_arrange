@@ -1,5 +1,7 @@
 # Kitchen Arrange
 
+![dishwasher](https://user-images.githubusercontent.com/6557808/123658480-9eb45380-d7e6-11eb-9519-51d7cc0e2cc7.png)
+
 ## Overview
 
 This is the top-level repo for our dishwasher-loading data collection effort.
