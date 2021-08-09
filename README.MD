@@ -116,4 +116,4 @@ You can also use authoring mode to edit the app's config variables:
 
 ## Known issues
 
-Mouse-picking on the Macbook built-in display seems to be broken. This is probably due to how our code (mis)handles OS DPI window-scaling.
+Mouse-picking on the Macbook built-in display is broken. This is due to how our code (mis)handles OS DPI window-scaling. A fix for the same issue in `habitat-sim`'s `viewer.cpp` is [here](https://github.com/facebookresearch/habitat-sim/pull/1415) and should be ported to `habitat-sim/src/utils/arrange_recorder/arrange_recorder.cpp`.
