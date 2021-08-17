@@ -1,0 +1,17 @@
+{
+  "translation_origin": "com",
+  "stage_instance": {
+    "template_name": "apartment_0_f0_stage_only_kitchen_aligned"
+  },
+  "object_instances": [
+  ],
+  "articulated_object_instances": [
+    {
+      "template_name": "fetch",
+      "fixed_base": true,
+      "motion_type": "KINEMATIC"
+    }
+  ],
+  "navmesh_instance": "navmesh_path1",
+  "semantic_scene_instance": "semantic_descriptor_path1"
+}
