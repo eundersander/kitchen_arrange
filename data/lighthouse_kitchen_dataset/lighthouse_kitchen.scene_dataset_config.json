@@ -16,7 +16,13 @@
     },
     "articulated_objects":{
       "paths": {
-        ".urdf" : ["urdf/dishwasher_urdf/ktc_dishwasher.urdf", "urdf/kitchen_oven/kitchen_oven.urdf"]
+        ".urdf" : [
+          "urdf/dishwasher_urdf/ktc_dishwasher.urdf", 
+          "urdf/kitchen_oven/kitchen_oven.urdf",
+          "urdf/ktc_fridge/ktc_fridge.urdf",
+          "urdf/ktc_oven/ktc_oven.urdf",
+          "urdf/opt_fetch/robots/fetch.urdf"
+        ]
       }
     },
     "light_setups":{
