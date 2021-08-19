@@ -1,0 +1,66 @@
+{
+  "translation_origin": "com",
+  "stage_instance": {
+    "template_name": "apartment_0_f0_stage_only_kitchen_aligned"
+  },
+  "object_instances": [
+    {
+      "template_name": "ktc_cabinets1",
+      "motion_type": "KINEMATIC"
+    },
+    {
+      "template_name": "ktc_cabinets2_open",
+      "motion_type": "KINEMATIC"
+    },
+    {
+      "template_name": "ktc_cabinets3",
+      "motion_type": "KINEMATIC"
+    },
+    {
+      "template_name": "ktc_hood",
+      "motion_type": "KINEMATIC"
+    },
+    {
+      "template_name": "frl_apartment_bowl_01"
+    },
+    {
+      "template_name": "frl_apartment_bowl_01"
+    },
+    {
+      "template_name": "frl_apartment_bowl_01"
+    },
+    {
+      "template_name": "frl_apartment_bowl_01"
+    },
+    {
+      "template_name": "frl_apartment_bowl_01"
+    },
+    {
+      "template_name": "frl_apartment_plate_01"
+    },
+    {
+      "template_name": "frl_apartment_plate_01"
+    },
+    {
+      "template_name": "frl_apartment_plate_01"
+    },
+    {
+      "template_name": "frl_apartment_plate_01"
+    },
+    {
+      "template_name": "frl_apartment_plate_01"
+    }
+  ],
+  "articulated_object_instances": [
+    {
+      "template_name": "ktc_dishwasher",
+      "fixed_base": true
+    },
+    {
+      "template_name": "kitchen_oven",
+      "fixed_base": true
+    }
+  ],
+  "navmesh_instance": "navmesh_path1",
+  "semantic_scene_instance": "semantic_descriptor_path1"
+}
