@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<robot name="ktc_fridge">
+  <link name="root">
+  </link>
+  
+  <joint name="body_transform" type="fixed">
+    <origin rpy="0 3.14159 0" xyz="0 0 0"/>
+    <parent link="root"/>
+    <child link="body"/>
+  </joint>
+  
+  <link name="body">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="25.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+<!-- glb file goes here -->
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+    <collision group="2">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge_COLLISION.glb"/>
+      </geometry>
+    </collision>
+  </link>
+  
+<!-- child articulated objects go here, add more <joint> <link> referenced pairs below -->
+<!-- limits for rotational joints are in radians, prysmatic in meters -->
+  
+ <!--3Ds Mac coordinates to urdf [X,Z,-Y]-->
+
+  <joint name="ktc_fridge_door_R" type="revolute"> 
+    <origin rpy="0 0 0" xyz="-0.451878 0.901502 -0.610434"/> 
+    <parent link="body"/>
+    <child link="ktc_fridge_door_R"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="0" upper="1.5708" velocity="1.0"/>
+  </joint>
+  
+<link name="ktc_fridge_door_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge_door_R.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision group="64">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge_door_R_COLLISION.glb"/>
+      </geometry>
+    </collision>
+</link>  
+
+
+  <joint name="ktc_fridge_door_L" type="revolute"> 
+    <origin rpy="0 0 0" xyz="0.458758 0.901502 -0.609887"/>
+    <parent link="body"/>
+    <child link="ktc_fridge_door_L"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="-1.5708" upper="0" velocity="1.0"/>
+  </joint>
+  
+<link name="ktc_fridge_door_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge_door_L.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision group="64">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge_door_L_COLLISION.glb"/>
+      </geometry>
+    </collision>
+</link>  
+
+  <joint name="ktc_fridge_cabinetdoor_L" type="revolute"> 
+    <origin rpy="0 0 0" xyz="0.493613 2.11115 -0.578104"/>   
+    <parent link="body"/>
+    <child link="ktc_fridge_cabinetdoor_L"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="-1.5708" upper="0" velocity="1.0"/>
+  </joint>
+  
+<link name="ktc_fridge_cabinetdoor_L">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge_cabinetdoor_L.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision group="64">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge_cabinetdoor_L_COLLISION.glb"/>
+      </geometry>
+    </collision>
+</link>  
+
+
+  <joint name="ktc_fridge_cabinetdoor_R" type="revolute"> 
+    <origin rpy="0 0 0" xyz="-0.489331 2.11115 -0.578272"/>
+    <parent link="body"/>
+    <child link="ktc_fridge_cabinetdoor_R"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="0" upper="1.5708" velocity="1.0"/>
+  </joint>
+  
+<link name="ktc_fridge_cabinetdoor_R">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge_cabinetdoor_R.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision group="64">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_fridge_cabinetdoor_R_COLLISION.glb"/>
+      </geometry>
+    </collision>
+</link>  
+
+
+  
+</robot>

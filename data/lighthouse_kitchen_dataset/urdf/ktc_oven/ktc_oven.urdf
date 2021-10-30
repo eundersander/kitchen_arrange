@@ -1,0 +1,231 @@
+<?xml version="1.0" ?>
+<robot name="ktc_oven">
+  <link name="root">
+  </link>
+  
+  <joint name="body_transform" type="fixed">
+    <origin rpy="0 3.14159 0" xyz="0 0 0"/>
+    <parent link="root"/>
+    <child link="body"/>
+  </joint>
+  
+  <link name="body">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="25.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+<!-- glb file goes here -->
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_COLLISION.glb"/>
+      </geometry>
+    </collision>
+  </link>
+  
+<!-- child articulated objects go here, add more <joint> <link> referenced pairs below -->
+<!-- limits for rotational joints are in radians, prysmatic in meters -->
+  
+  <joint name="ktc_oven_drawer" type="prismatic">  
+    <origin rpy="0 0 0" xyz="0.00143652 0.126535 -0.446032"/>
+    <parent link="body"/>
+    <child link="ktc_oven_drawer"/>
+    <axis xyz="0 0 -1"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="0" upper="0.35" velocity="1.0"/>
+  </joint>
+
+  <link name="ktc_oven_drawer">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_drawer.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_drawer_COLLISION.glb"/>
+      </geometry>
+    </collision>	
+  </link>   
+  
+  
+  
+  <joint name="ktc_oven_door" type="revolute"> 
+    <origin rpy="0 0 0" xyz="0 0.229183 -0.629578"/>
+    <parent link="body"/>
+    <child link="ktc_oven_door"/>
+    <axis xyz="1 0 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="-1.5708" upper="0" velocity="1.0"/>
+  </joint>
+  
+<link name="ktc_oven_door">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_door.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_door_COLLISION.glb"/>
+      </geometry>
+    </collision>
+</link>  
+  
+  
+  
+  <joint name="ktc_oven_knob1" type="revolute"> 
+    <origin rpy="-0.304106169 0 0" xyz="0.304087 0.899012 -0.598124"/>
+    <parent link="body"/>
+    <child link="ktc_oven_knob1"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="-0.7854" upper="0.7854" velocity="1.0"/>
+  </joint>
+  
+<link name="ktc_oven_knob1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_knob1.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_knob1_COLLISION.glb"/>
+      </geometry>
+    </collision>
+</link>  
+
+
+  <joint name="ktc_oven_knob2" type="revolute"> 
+    <origin rpy="-0.304106169 0 0" xyz="0.228036 0.897669 -0.6024"/>
+    <parent link="body"/>
+    <child link="ktc_oven_knob2"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="-0.7854" upper="0.7854" velocity="1.0"/>
+  </joint>
+  
+<link name="ktc_oven_knob2">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_knob2.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_knob2_COLLISION.glb"/>
+      </geometry>
+    </collision>
+</link>  
+
+
+  <joint name="ktc_oven_knob3" type="revolute"> 
+    <origin rpy="-0.304106169 0 0" xyz="-0.234098 0.898154 -0.602552"/>
+    <parent link="body"/>
+    <child link="ktc_oven_knob3"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="-0.7854" upper="0.7854" velocity="1.0"/>
+  </joint>
+  
+<link name="ktc_oven_knob3">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_knob3.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_knob3_COLLISION.glb"/>
+      </geometry>
+    </collision>
+</link>  
+
+
+  <joint name="ktc_oven_knob4" type="revolute"> 
+    <origin rpy="-0.304106169 0 0" xyz="-0.30809 0.899198 -0.597529"/>
+    <parent link="body"/>
+    <child link="ktc_oven_knob4"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+    <limit effort="44.4" lower="-0.7854" upper="0.7854" velocity="1.0"/>
+  </joint>
+  
+<link name="ktc_oven_knob4">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="2.0"/>
+      <!-- Warning: dummy inertia. Expect that inertia diagonal will be computed during load. -->
+      <inertia ixx="1.0" ixy="0" ixz="0" iyy="1.0" iyz="0" izz="1.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_knob4.glb" scale="1, 1, 1"/>
+      </geometry>
+    </visual>
+
+	<collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="ktc_oven_knob4_COLLISION.glb"/>
+      </geometry>
+    </collision>
+</link>  
+  
+</robot>
