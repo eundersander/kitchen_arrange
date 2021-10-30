@@ -1,0 +1,28 @@
+{
+  "keyframe": {
+      "rigidObjects": [
+
+      ],
+      "articulatedObjects": [
+        {
+          "name": "ktc_dishwasher_:0000",
+          "pos": [
+              -1.0549999,
+              0.07,
+              0.035
+          ],
+          "rot": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+          ],
+          "joints": [
+              0.0,
+              -1.0,
+              0.0
+          ]
+      }          
+    ]
+  }
+}
