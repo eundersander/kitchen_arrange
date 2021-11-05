@@ -4,7 +4,7 @@
 
 ## Updates
 
-11/01/21 - added `batch_arrange` tool, rebased habitat-sim to latest main, and updated some data (see `data_v3.zip`)
+11/01/21 - added `batch_arrange` tool, rebased habitat-sim to latest `main`, and updated some data (see `data_v3.zip`)
 
 ## Overview
 
@@ -119,15 +119,20 @@ You can also use authoring mode to edit the app's config variables:
 1. Ensure that your Python is configured to load your locally-built version of Habitat. See [Build From Source](https://github.com/facebookresearch/habitat-sim/blob/master/BUILD_FROM_SOURCE.md) including instructions for setting `PYTHONPATH`.
 2. Run `habitat-sim/tools/arrange_session_viewer.py --session data/sessions/your_session.session.json --output-folder data/videos`
 
-## `batch_arrange` tool (WIP)
+## `batch_arrange` tool overview
 
-`batch_arrange` is an alternatve to the interactive C++ GUI app that procedurally generates a random arrangement session. See `src/utils/batch_arrange/BatchArrange.cpp` to understand and customize the generation logic.
+`batch_arrange` is an alternatve to the interactive C++ GUI app that procedurally generates random arrangement sessions. See `src/utils/batch_arrange/BatchArrange.cpp` `BatchArrange::generateRandomSession()` to understand and customize the generation logic. While this is C++ code (for now), this function is essentially a script that generates a random arrangement session by calling into the `Arranger` headless API, namely `tryMoveRigidObject` and `moveArticulatedLink`. Going forward, we might want to make this function more data-driven (e.g. load `minObjectsUpperRack` from a config file), or we might want to implement Python bindings for the `Arranger` headless API so that `generateRandomSession` can be ported to Python. 
 
-To build and run:
-1. After building habitat-sim, look for the binary executable at `habitat-sim/build/utils/batch_arrange/batch_arrange`.
+## Building and running `batch_arrange`
+1. After building habitat-sim using the earlier instructions, look for the binary executable at `habitat-sim/build/utils/batch_arrange/batch_arrange`. Consider setting an env var `PATH_TO_BATCH_ARRANGE`.
 2. Set your working directory to `kitchen_arrange`.
-3. `PATH_TO_BATCH_ARRANGE --scene data/lighthouse_kitchen_dataset/scenes/scene0_unloaded.scene_instance.json --dataset data/lighthouse_kitchen_dataset/lighthouse_kitchen.scene_dataset_config.json --arrange-config data/batch_arrange.arrange_config.json`
-4. Watch the terminal output. The tool generates and saves a `session.json` file that can be viewed with `arrange_session_viewer.py`.
+3. `PATH_TO_BATCH_ARRANGE --scene data/lighthouse_kitchen_dataset/scenes/scene0_unloaded.scene_instance.json --dataset data/lighthouse_kitchen_dataset/lighthouse_kitchen.scene_dataset_config.json --arrange-config data/batch_arrange.arrange_config.json --num-sessions 5 --random-seed 2`
+4. Watch the terminal output. The tool generates and saves one or more `session.json` files that can be viewed with `arrange_session_viewer.py`.
+5. In the steps above, notice we use `batch_arrange.arrange_config.json` instead of `default.arrange_config.json` used earlier. You may wish to inspect this file, edit it, or create a new `arrange_config.json` file.
+
+## Tuning spatial config data for `batch_arrange`
+
+The `BatchArrange::getRandomDropPositionForRack` function is meant to get a random position in the upper or lower dishwasher rack. The spatial extent data is pulled from two `debugLineLists` in `data/batch_arrange.arrange_config.json`. This kind of spatial data is easiest to author and tune visually. To do this, run the interactive `arrange_recorder` in authoring mode, specifying `data/batch_arrange.arrange_config.json` (you may need to modify `kitchen_arrange.sh`). The interactive viewer will display all debug line lists in pink. Edit the vertices in a text editor and the line lists will be hot-reloaded.
 
 ## Known issues
 
