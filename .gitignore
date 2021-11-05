@@ -1,3 +1,7 @@
 *.glb
 data/sessions
 data/videos
+data/batch_sessions
+
+# macOS system file
+.DS_Store
