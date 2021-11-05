@@ -4,5 +4,5 @@ FILES="data/batch_sessions/*"
 for f in $FILES
 do
   echo "Processing $f file..."
-  python ../habitat-sim3/tools/arrange_session_viewer.py --session $f --output-folder data/videos
+  python $PATH_TO_SESSION_VIEWER --session $f --output-folder data/videos
 done
